@@ -31,7 +31,6 @@ class ImageDataset(Dataset):
     def __init__(self, dataset, transform=None):
         self.dataset = dataset
         self.transform = transform
-        print("1")
 
     def __len__(self):
         return len(self.dataset)

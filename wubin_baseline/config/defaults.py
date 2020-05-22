@@ -15,7 +15,7 @@ _C.MODEL.NAME = 'resnet50'
 # Last stride of backbone
 _C.MODEL.LAST_STRIDE = 1
 # Path to pretrained model of backbone
-_C.MODEL.PRETRAIN_PATH = ''
+_C.MODEL.PRETRAIN_PATH = 'D:/行人再识别资料/models/resnet50-19c8e357.pth'
 # Use ImageNet pretrained model to initialize backbone or use self trained model to initialize the whole model
 # Options: 'imagenet' or 'self'
 _C.MODEL.PRETRAIN_CHOICE = 'imagenet'
@@ -36,9 +36,9 @@ _C.MODEL.IF_LABELSMOOTH = 'on'
 # input
 _C.INPUT = CN()
 # Size of the image during training
-_C.INPUT.SIZE_TRAIN = [384, 128]
+_C.INPUT.SIZE_TRAIN = [256, 128]
 # Size of the image during test
-_C.INPUT.SIZE_TEST = [384, 128]
+_C.INPUT.SIZE_TEST = [256, 128]
 # Random probability for image horizontal flip
 _C.INPUT.PROB = 0.5
 # Random probability for random erasing
@@ -56,7 +56,7 @@ _C.DATASETS = CN()
 # List of the dataset names for training, as present in paths_catalog.py
 _C.DATASETS.NAMES = ('market1501')
 # Root directory where datasets should be used (and downloaded if not found)
-_C.DATASETS.ROOT_DIR = ('D:/行人再识别资料/code/wubin_baseline/data')
+_C.DATASETS.ROOT_DIR = ('D:/数据集')
 
 
 # DataLoader
